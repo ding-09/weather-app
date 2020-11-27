@@ -3,12 +3,14 @@
 async function getWeather() {
   try {
     const response = await fetch(
-      'http://api.weatherapi.com/v1/forecast.json?key=1986480656ec490d950204923202611&q=bakersfield',
+      'http://api.weatherapi.com/v1/forecast.json?key=1986480656ec490d950204923202611&q=guangzhou',
       {
         mode: 'cors',
       }
     );
     const weatherData = await response.json();
+    console.log(weatherData);
+
   } catch (error) {
     alert(error);
   }

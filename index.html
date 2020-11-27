@@ -5,21 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/a538d6fa29.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Source+Sans+Pro:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a538d6fa29.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Weather App</title>
   </head>
   <body>
     <header>
-        <form>
-            <div class="form-group">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="Search city">
-            </div>
-        </form>
+      <form>
+        <div class="form-group">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search city" />
+        </div>
+      </form>
     </header>
-
-
-
+    <div class="main-weather-display">
+      <div class="general-info">
+        <p class="description">MOSTLY SUNNY</p>
+        <h1 class="location">LOS ANGELES</h1>
+        <span class="degrees">69</span>
+      </div>
+      <div class="weather-details">
+        <p class="feels-like">FEELS LIKE: 70</p>
+        <p class="wind-mph">WIND: 5 MPH</p>
+        <p class="humidity">HUMIDITY: 69%</p>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

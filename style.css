@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 html {
@@ -15,7 +16,7 @@ body {
 }
 
 body {
-  background-image: url('https://images.unsplash.com/photo-1498354136128-58f790194fa7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI5ODk5fQ&auto=format&fit=crop&w=1650&q=80');
+  background-image: url('https://images.unsplash.com/photo-1597499898808-102c7acb6538?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1440&q=900');
   background-repeat: no-repeat;
   position: relative;
 }
@@ -26,7 +27,7 @@ header {
 
 form {
   height: 100%;
-  margin: 2.5rem 4.5rem 0rem 0rem;
+  margin: 2.5rem 4rem 0rem 0rem;
 }
 
 .form-group {
@@ -36,7 +37,7 @@ form {
 }
 
 .fa-search {
-  color: #e0e0e0;
+  color: #f3f3f3;
   font-size: 1.8rem;
   position: absolute;
   top: 28%;
@@ -44,17 +45,82 @@ form {
 }
 
 input[type='text'] {
-  width: 20rem;
+  width: 21.5rem;
   height: 100%;
   border: none;
   outline: none;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 0 0 0 4.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0 0 0.3rem 4.5rem;
   color: #ffffff;
   font-size: 1.6rem;
   border-radius: 0.5rem;
 }
 
 input[type='text']::placeholder {
-  color: #e0e0e0;
+  color: #f3f3f3;
 }
+
+.main-weather-display {
+  position: absolute;
+  top: 30%;
+  width: 90%;
+  margin-left: 10%;
+  color: #f3f3f3;
+}
+
+.description {
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.location {
+  font-size: 4rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+.degrees {
+  font-size: 15rem;
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+}
+
+.degrees::after {
+  content: '\00B0';
+  font-size: 5rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 0rem;
+} 
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
+    top: 45%;
+    left: 22.5rem;
+    height: 10rem;
+    padding-left: 3.5rem;
+    justify-content: space-between;
+    
+}
+
+.feels-like {
+    position: relative;
+}
+
+.feels-like::after {
+    content: '\00B0';
+    position: absolute;
+    bottom: 0.4rem;
+}
+
+
+
