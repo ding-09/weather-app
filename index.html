@@ -23,27 +23,32 @@
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <div class="form-group">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search city" />
+    <div id="main-container">
+      <header>
+        <form>
+          <div class="form-group">
+            <button class="submit-btn">
+              <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Search city" />
+            <br>
+            <span class="error-msg fade-in">No matching location found!</span>
+          </div>
+        </form>
+      </header>
+      <div class="main-weather-display info">
+        <div class="general-info">
+          <p class="condition">MOSTLY SUNNY</p>
+          <h1 class="location">LOS ANGELES</h1>
+          <span class="degrees">69</span>
         </div>
-      </form>
-    </header>
-    <div class="main-weather-display">
-      <div class="general-info">
-        <p class="description">MOSTLY SUNNY</p>
-        <h1 class="location">LOS ANGELES</h1>
-        <span class="degrees">69</span>
-      </div>
-      <div class="weather-details">
-        <p class="feels-like">FEELS LIKE: 70</p>
-        <p class="wind-mph">WIND: 5 MPH</p>
-        <p class="humidity">HUMIDITY: 69%</p>
+        <div class="weather-details info">
+          <p class="feels-like">FEELS LIKE: 70</p>
+          <p class="wind-mph">WIND: 5 MPH</p>
+          <p class="humidity">HUMIDITY: 69</p>
+        </div>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

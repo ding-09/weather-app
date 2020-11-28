@@ -11,14 +11,19 @@ html {
 
 html,
 body {
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
-body {
+#main-container {
   background-image: url('https://images.unsplash.com/photo-1597499898808-102c7acb6538?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1440&q=900');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -27,25 +32,32 @@ header {
 
 form {
   height: 100%;
-  margin: 2.5rem 4rem 0rem 0rem;
 }
 
 .form-group {
   float: right;
   height: 80%;
   position: relative;
+  margin: 2.5rem 3.5rem 0 0;
+}
+
+.submit-btn {
+  position: absolute;
+  top: 27%;
+  left: 6%;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .fa-search {
   color: #f3f3f3;
   font-size: 1.8rem;
-  position: absolute;
-  top: 28%;
-  left: 7%;
 }
 
 input[type='text'] {
-  width: 21.5rem;
+  width: 24rem;
   height: 100%;
   border: none;
   outline: none;
@@ -60,6 +72,15 @@ input[type='text']::placeholder {
   color: #f3f3f3;
 }
 
+.error-msg {
+  display: hidden;
+  position: absolute;
+  left: 2rem;
+  color: #ff3333;
+  font-size: 15px;
+  display: none;
+}
+
 .main-weather-display {
   position: absolute;
   top: 30%;
@@ -68,7 +89,7 @@ input[type='text']::placeholder {
   color: #f3f3f3;
 }
 
-.description {
+.condition {
   font-size: 2.2rem;
   letter-spacing: 0.1rem;
 }
@@ -94,33 +115,61 @@ input[type='text']::placeholder {
   position: absolute;
   top: 1.5rem;
   right: 0rem;
-} 
+}
 
 .weather-details {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: 0.1rem;
-    position: absolute;
-    border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
-    top: 45%;
-    left: 22.5rem;
-    height: 10rem;
-    padding-left: 3.5rem;
-    justify-content: space-between;
-    
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
+  top: 45%;
+  left: 22.5rem;
+  height: 10rem;
+  padding-left: 3.5rem;
+  justify-content: space-between;
 }
 
 .feels-like {
-    position: relative;
+  position: relative;
 }
 
 .feels-like::after {
-    content: '\00B0';
-    position: absolute;
-    bottom: 0.4rem;
+  content: '\00B0';
+  position: absolute;
+  bottom: 0.4rem;
 }
 
+.humidity::after {
+  content: '%';
+}
 
+.fade-in {
+  animation: fadeIn 0.5s;
+}
 
+.fade-in2{
+  animation: fadeIn2 1s;
+}
+
+@keyframes fadeIn {
+  0% { 
+    opacity: 0;
+    top: 7rem;
+  }
+  100% {
+    opacity: 0.5; 
+    top: 4.4rem;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
