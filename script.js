@@ -9,7 +9,6 @@ function handleSubmit(e) {
   fetchWeather();
 }
 
-
 async function getWeatherData(location) {
   const response = await fetch(
     `http://api.weatherapi.com/v1/forecast.json?key=1986480656ec490d950204923202611&q=${location}`,
@@ -20,8 +19,8 @@ async function getWeatherData(location) {
   if (response.status === 400) {
     throwErrorMsg();
   } else {
+    error.style.display = 'none';
     const weatherData = await response.json();
-    console.log(weatherData);
     const newData = processData(weatherData);
     displayData(newData);
     reset();
