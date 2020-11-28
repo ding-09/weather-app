@@ -147,27 +147,28 @@ input[type='text']::placeholder {
 }
 
 .fade-in {
-  animation: fadeIn 0.5s;
+  animation: fadeIn 0.2s;
 }
 
-.fade-in2{
-  animation: fadeIn2 1s;
+.fade-in2 {
+  animation: fadeIn2 1.1s;
 }
 
 @keyframes fadeIn {
-  0% { 
+  0% {
     opacity: 0;
-    top: 7rem;
+    top: 6rem;
   }
   100% {
-    opacity: 0.5; 
+    opacity: 0.5;
     top: 4.4rem;
   }
 }
 
 @keyframes fadeIn2 {
   0% {
-    opacity: 0;
+    opacity: 0.1;
+    transform: scale(0.9, 0.9);
   }
   100% {
     opacity: 1;
