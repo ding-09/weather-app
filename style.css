@@ -17,7 +17,7 @@ body {
 }
 
 #main-container {
-  background-image: url('https://images.unsplash.com/photo-1597499898808-102c7acb6538?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1440&q=900');
+  background-image: url('night.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -61,7 +61,7 @@ input[type='text'] {
   height: 100%;
   border: none;
   outline: none;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 0 0 0.3rem 4.5rem;
   color: #ffffff;
   font-size: 1.6rem;

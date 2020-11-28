@@ -106,9 +106,5 @@ function fetchWeather() {
 }
 
 
-// handle image change 
-const image = {
-
-}
 
 
