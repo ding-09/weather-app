@@ -28,6 +28,7 @@ body {
 
 header {
   height: 5.5rem;
+  position: relative;
 }
 
 form {
@@ -111,12 +112,13 @@ input[type='text']::placeholder {
 }
 
 .degrees::after {
-  content: '\00B0';
-  font-size: 5rem;
+  content: '\00B0 F';
+  font-size: 3rem;
   position: absolute;
-  top: 1.5rem;
-  left: 17.5rem;
+  top: 1.8rem;
+  left: 17.3rem;
 }
+
 
 .weather-details {
   display: flex;
@@ -138,9 +140,11 @@ input[type='text']::placeholder {
 }
 
 .feels-like::after {
-  content: '\00B0';
+  content: '\00B0 F';
   position: absolute;
-  bottom: 0.4rem;
+  bottom: 1.1rem;
+  left: 11.4rem;
+  font-size: 1rem;
 }
 
 .humidity::after {
