@@ -92,6 +92,7 @@ input[type='text']::placeholder {
 .condition {
   font-size: 2.2rem;
   letter-spacing: 0.1rem;
+  padding-left: 0.3rem;
 }
 
 .location {
@@ -114,7 +115,7 @@ input[type='text']::placeholder {
   font-size: 5rem;
   position: absolute;
   top: 1.5rem;
-  right: 0rem;
+  left: 17.5rem;
 }
 
 .weather-details {
